@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>flaps.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>fond</object-name>
+    <object-name>manetteflaps</object-name>
+  </animation>
+  
+  <!-- Manette des flaps -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manetteflaps</object-name>
+    <property>/controls/flight/flaps</property>
+    <factor> 126 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>interieur2</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intcanope</object-name>
+    <object-name>inttourcanope</object-name>
+    <object-name>inttourfenG</object-name>
+    <object-name>intfenG</object-name>
+    <object-name>inttourfenD</object-name>
+    <object-name>intfenD</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitrecanope</object-name>
+    <object-name>intvitrefenG</object-name>
+    <object-name>intvitrefenD</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitrecanope</object-name>
+    <object-name>intvitrefenG</object-name>
+    <object-name>intvitrefenD</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitrecanope</object-name>
+    <object-name>intvitrefenG</object-name>
+    <object-name>intvitrefenD</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intvitrecanope</object-name>
+    <object-name>intvitrefenG</object-name>
+    <object-name>intvitrefenD</object-name>
+  </effect>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Lockheed-P38/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.277 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.444 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/Lockheed-P38/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.00127 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.43698 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -2.93509 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.52600 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Throttles -->
+  <model>
+    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -2.48564 </x-m>
+      <y-m> -0.29282 </y-m>
+      <z-m>  0.33885 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Flaps -->
+  <model>
+    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m> -2.65065 </x-m>
+      <y-m>  0.34731 </y-m>
+      <z-m>  0.34590 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Yoke -->
+  <model>
+    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -2.54456 </x-m>
+      <y-m>  0.25999 </y-m>
+      <z-m>  0.01568 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Canopy -->
+  <animation>
+    <name>IntCanopeHaut</name>
+    <object-name>intcanope</object-name>
+    <object-name>inttourcanope</object-name>
+    <object-name>intvitrecanope</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntCanopeHaut</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntCanopeHaut</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 120 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.850 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.044 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntFenetreGauche</name>
+    <object-name>inttourfenG</object-name>
+    <object-name>intfenG</object-name>
+    <object-name>intvitrefenG</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntFenetreGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntFenetreGauche</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 25 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.189 </x-m>
+      <y-m>  0.378 </y-m>
+      <z-m>  0.402 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntFenetreDroite</name>
+    <object-name>inttourfenD</object-name>
+    <object-name>intfenD</object-name>
+    <object-name>intvitrefenD</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntFenetreDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntFenetreDroite</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -25 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.189 </x-m>
+      <y-m> -0.378 </y-m>
+      <z-m>  0.402 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

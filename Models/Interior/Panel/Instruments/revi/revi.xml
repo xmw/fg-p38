@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>revi.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>roue1</object-name>
+    <object-name>roue2</object-name>
+    <object-name>support</object-name>
+
+    <object-name>viseur</object-name>
+    <object-name>lentille</object-name>
+  </animation>
+  
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>viseur</object-name>
+    <object-name>lentille</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>viseur</object-name>
+    <object-name>lentille</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>viseur</object-name>
+    <object-name>lentille</object-name>
+  </effect>
+
+</PropertyList>

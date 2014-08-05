@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Extérieur gauche -->
+  <submodel>
+    <name>exterieur left</name>
+    <model>Aircraft/Lockheed-P38/Models/Effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> 17.50 </x-offset>    <!-- -5.333 m = 17.50 ft -->
+    <y-offset>  0.80 </y-offset>    <!-- -0.245 m =  0.80 ft -->
+    <z-offset>  0.69 </z-offset>    <!--  0.210 m =  0.69 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Lockheed-P38/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <!--Extérieur droit -->
+  <submodel>
+    <name>exterieur right</name>
+    <model>Aircraft/Lockheed-P38/Models/Effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.62</delay>
+    <count>-1</count>
+    <x-offset> 17.50 </x-offset>    <!-- -5.333 m = 17.50 ft -->
+    <y-offset> -0.80 </y-offset>    <!--  0.245 m = -0.80 ft -->
+    <z-offset>  0.69 </z-offset>    <!--  0.210 m =  0.69 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Lockheed-P38/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <!--Centre gauche -->
+  <submodel>
+    <name>center right</name>
+    <model>Aircraft/Lockheed-P38/Models/Effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.62</delay>
+    <count>-1</count>
+    <x-offset> 17.83 </x-offset>    <!-- -5.434 m = 17.83 ft -->
+    <y-offset>  0.31 </y-offset>    <!-- -0.093 m =  0.31 ft -->
+    <z-offset>  1.06 </z-offset>    <!--  0.323 m =  1.06 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Lockheed-P38/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <!--Centre droite -->
+  <submodel>
+    <name>center right</name>
+    <model>Aircraft/Lockheed-P38/Models/Effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.62</delay>
+    <count>-1</count>
+    <x-offset> 18.45 </x-offset>    <!-- -5.624 m = 18.45 ft -->
+    <y-offset> -0.31 </y-offset>    <!--  0.093 m = -0.31 ft -->
+    <z-offset>  1.06 </z-offset>    <!--  0.323 m =  1.06 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Lockheed-P38/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <!--Canon -->
+  <submodel>
+    <name>Canon</name>
+    <model>Aircraft/Lockheed-P38/Models/Effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.62</delay>
+    <count>-1</count>
+    <x-offset> 18.04 </x-offset>    <!-- -5.498 m = 18.04 ft -->
+    <y-offset>  0.00 </y-offset>    <!--  0.000 m =  0.00 ft -->
+    <z-offset>  0.53 </z-offset>    <!--  0.161 m =  0.53 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Lockheed-P38/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+</PropertyList>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList include="p38-base.xml">
+
+  <sim>
+
+    <description>Lockheed P 38 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <flight-model>yasim</flight-model>
+    <aero>p38-yasim</aero>
+
+  </sim>
+  
+</PropertyList>
+
