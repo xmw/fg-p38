@@ -112,7 +112,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/psi/psi.xml</path>
+    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/psi/psi1.xml</path>
     <offsets>
       <x-m> -0.005 </x-m>
       <y-m>  0.224 </y-m>
