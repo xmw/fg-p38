@@ -11,141 +11,106 @@
     <!-- Objets transparents -->
   </animation>
 
-  <!-- AI  -->
+<!--
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <path>Aircraft/Instruments-3d/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.004 </x-m>
+      <x-m>  0.033 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
+      <z-m>  0.120 </z-m>
     </offsets>
   </model>
 
-  <!-- MANIFOLD  -->
   <model>
     <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/manifold/man.xml</path>
     <offsets>
       <x-m> -0.005 </x-m>
-      <y-m>  0.117 </y-m>
-      <z-m>  0.069 </z-m>
+      <y-m> -0.310 </y-m>
+      <z-m> -0.080 </z-m>
     </offsets>
   </model>
- 
-  <!-- RPM  -->
+--> 
   <model>
     <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
       <x-m> -0.005 </x-m>
-      <y-m>  0.224 </y-m>
-      <z-m>  0.069 </z-m>
+      <y-m> -0.200 </y-m>
+      <z-m> -0.080 </z-m>
     </offsets>
   </model>
-  
-  <!-- TURN  -->
+<!--  
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <path>Aircraft/Instruments-3d/tc/tc.xml</path>
     <offsets>
-      <x-m> -0.002 </x-m>
-      <y-m> -0.070 </y-m>
-      <z-m> -0.110 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- VSI  -->
-  <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
-    <offsets>
-      <x-m> -0.002 </x-m>
-      <y-m>  0.030 </y-m>
-      <z-m> -0.110 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- ASI  -->
-  <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/asi/asi.xml</path>
-    <offsets>
-      <x-m> -0.002 </x-m>
-      <y-m> -0.170 </y-m>
-      <z-m> -0.110 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- COMPASS -->
-  <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/compass/compass.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.122 </y-m>
-      <z-m> -0.009 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- CLOCK -->
-  <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/clock/clock.xml</path>
-    <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m> -0.100 </y-m>
-      <z-m>  0.090 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- ALT -->
-  <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m> -0.270 </y-m>
-      <z-m> -0.110 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- PSI
-  <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/psi/psi.xml</path>
-    <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m>  0.117 </y-m>
-      <z-m> -0.034 </z-m>
+      <x-m> 0.033 </x-m>
+      <y-m>-0.100 </y-m>
+      <z-m> 0.020 </z-m>
     </offsets>
   </model>
   
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/psi/psi1.xml</path>
+    <path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
     <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m>  0.224 </y-m>
-      <z-m> -0.034 </z-m>
+      <x-m>  0.033 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m>  0.020 </z-m>
     </offsets>
-  </model> -->
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/asi300/asi300-3d.xml</path>
+    <offsets>
+      <x-m> 0.033 </x-m>
+      <y-m>-0.100 </y-m>
+      <z-m> 0.120 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/mag-compass.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/hi/hi.xml</path>
+    <offsets>
+      <x-m>  0.033 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/alt-2/alt2-3d.xml</path>
+    <offsets>
+      <x-m> 0.033 </x-m>
+      <y-m> 0.100 </y-m>
+      <z-m> 0.120 </z-m>
+    </offsets>
+  </model> 
+-->
   
   <!-- FUEL -->
   <model>
     <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
     <offsets>
       <x-m> -0.004 </x-m>
-      <y-m>  0.127 </y-m>
-      <z-m> -0.134 </z-m>
+      <y-m> -0.280 </y-m>
+      <z-m>  0.020 </z-m>
     </offsets>
   </model>
   
-  <!-- AMMETER -->
-  <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
-    <offsets>
-      <x-m> -0.004 </x-m>
-      <y-m>  0.215 </y-m>
-      <z-m> -0.134 </z-m>
-    </offsets>
-  </model>
   
   <!-- MAGNETOS -->
   <model>
     <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/magnetos/magnetos.xml</path>
     <offsets>
       <x-m>  0.060 </x-m>
-      <y-m> -0.210 </y-m>
+      <y-m> -0.260 </y-m>
       <z-m> -0.183 </z-m>
       <pitch-deg> -90 </pitch-deg>
     </offsets>
@@ -156,7 +121,7 @@
     <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/switchs/startL.xml</path>
     <offsets>
       <x-m>  0.104 </x-m>
-      <y-m> -0.256 </y-m>
+      <y-m> -0.306 </y-m>
       <z-m> -0.183 </z-m>
       <pitch-deg> -90 </pitch-deg>
     </offsets>
@@ -166,20 +131,30 @@
     <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/switchs/startR.xml</path>
     <offsets>
       <x-m>  0.104 </x-m>
-      <y-m> -0.163 </y-m>
+      <y-m> -0.213 </y-m>
       <z-m> -0.183 </z-m>
       <pitch-deg> -90 </pitch-deg>
     </offsets>
   </model>
-  
-  <!-- REVI
+
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Interior/Panel/Instruments/revi/revi.xml</path>
+    <name>PFD1</name>
+    <path>Aircraft/Instruments-3d/primus-1000/PFD/PFD.xml</path>
     <offsets>
-      <x-m> 0.033 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.146 </z-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.040 </z-m>
     </offsets>
-  </model> -->
-  
+  </model>
+
+  <model>
+    <name>MFD1</name>
+    <path>Aircraft/Instruments-3d/primus-1000/MFD/MFD.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.190 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+
 </PropertyList>

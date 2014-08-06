@@ -126,6 +126,12 @@
       <file>Aircraft/Lockheed-P38/Nasal/weapons.nas</file>
       <file>Aircraft/Lockheed-P38/Nasal/revi.nas</file>
     </guns>
+    <efis>
+      <file>Aircraft/Instruments-3d/primus-1000/P1000.nas</file>
+    </efis>
+    <dev>
+      <file>Aircraft/Lockheed-P38/Nasal/dev.nas</file>
+    </dev>
   </nasal>
 
 </PropertyList>
