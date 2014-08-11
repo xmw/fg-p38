@@ -6,7 +6,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Lockheed-P38/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Models/Liveries", 10);
 
       var self = cmdarg();
 
@@ -285,7 +285,7 @@
 
   <!-- Une ombre pour OSG -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/shadow.xml</path>
+    <path>Models/shadow.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
@@ -296,7 +296,7 @@
   <!-- Intérieur -->
   <model>
     <name>Interieur</name>
-    <path>Aircraft/Lockheed-P38/Models/Interior/interior.xml</path>
+    <path>Models/Interior/interior.xml</path>
   </model>
 
   <!-- For Rembrandt -->
@@ -308,7 +308,7 @@
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/cranking/crankingL.xml</path>
+    <path>Models/Effects/cranking/crankingL.xml</path>
     <offsets>
       <x-m> -0.030 </x-m>
       <y-m> -2.257 </y-m>
@@ -319,7 +319,7 @@
 
   <!-- Right -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/cranking/crankingR.xml</path>
+    <path>Models/Effects/cranking/crankingR.xml</path>
     <offsets>
       <x-m> -0.030 </x-m>
       <y-m>  2.551 </y-m>
@@ -331,7 +331,7 @@
   <!-- Effets sur le sol -->
   <!-- Roue avant -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/ground/ground0.xml</path>
+    <path>Models/Effects/ground/ground0.xml</path>
     <offsets>
       <x-m> -4.383 </x-m>
       <y-m>  0.000 </y-m>
@@ -341,7 +341,7 @@
 
   <!-- Roues gauches -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/ground/ground1.xml</path>
+    <path>Models/Effects/ground/ground1.xml</path>
     <offsets>
       <x-m> -1.360 </x-m>
       <y-m> -2.502 </y-m>
@@ -351,7 +351,7 @@
 
   <!-- Roues droites -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/ground/ground2.xml</path>
+    <path>Models/Effects/ground/ground2.xml</path>
     <offsets>
       <x-m> -1.360 </x-m>
       <y-m>  2.502 </y-m>
@@ -362,7 +362,7 @@
   <!-- Effets de tir -->
   <!-- Extérieur gauche -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/guns/fire.xml</path>
+    <path>Models/Effects/guns/fire.xml</path>
     <offsets>
       <x-m> -5.333 </x-m>
       <y-m> -0.245 </y-m>
@@ -373,7 +373,7 @@
 
   <!--Extérieur droit -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/guns/fire.xml</path>
+    <path>Models/Effects/guns/fire.xml</path>
     <offsets>
       <x-m> -5.333 </x-m>
       <y-m>  0.245 </y-m>
@@ -384,7 +384,7 @@
 
   <!-- Central gauche -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/guns/fire.xml</path>
+    <path>Models/Effects/guns/fire.xml</path>
     <offsets>
       <x-m> -5.434 </x-m>
       <y-m> -0.093 </y-m>
@@ -395,7 +395,7 @@
 
   <!-- Central droit -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/guns/fire.xml</path>
+    <path>Models/Effects/guns/fire.xml</path>
     <offsets>
       <x-m> -5.624 </x-m>
       <y-m>  0.093 </y-m>
@@ -406,7 +406,7 @@
 
   <!-- Canon -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/Effects/guns/fire.xml</path>
+    <path>Models/Effects/guns/fire.xml</path>
     <offsets>
       <x-m> -5.498 </x-m>
       <y-m>  0.000 </y-m>
@@ -1196,7 +1196,7 @@
 
   <!-- Ajout des effets lumineux -->
   <model>
-    <path>Aircraft/Lockheed-P38/Models/light/beacon.xml</path>
+    <path>Models/light/beacon.xml</path>
     <offsets>
       <x-m>  4.99369 </x-m>
       <y-m> -2.40405 </y-m>
@@ -1205,7 +1205,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Lockheed-P38/Models/light/beacon.xml</path>
+    <path>Models/light/beacon.xml</path>
     <offsets>
       <x-m> 4.99369 </x-m>
       <y-m> 2.40405 </y-m>
@@ -1214,7 +1214,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Lockheed-P38/Models/light/RedLight.xml</path>
+    <path>Models/light/RedLight.xml</path>
     <offsets>
       <x-m> -1.64766 </x-m>
       <y-m> -7.89396 </y-m>
@@ -1223,7 +1223,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Lockheed-P38/Models/light/StrobeLight.xml</path>
+    <path>Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -1.63745 </x-m>
       <y-m> -7.89406 </y-m>
@@ -1232,7 +1232,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Lockheed-P38/Models/light/GreenLight.xml</path>
+    <path>Models/light/GreenLight.xml</path>
     <offsets>
       <x-m> -1.64766 </x-m>
       <y-m>  7.89396 </y-m>
@@ -1241,7 +1241,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Lockheed-P38/Models/light/StrobeLight.xml</path>
+    <path>Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -1.63745 </x-m>
       <y-m>  7.89406 </y-m>

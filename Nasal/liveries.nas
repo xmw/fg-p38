@@ -1,2 +1,2 @@
-aircraft.livery.init("Aircraft/Lockheed-P38/Models/Liveries");
+aircraft.livery.init("Models/Liveries");
 
