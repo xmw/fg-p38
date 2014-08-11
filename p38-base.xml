@@ -12,11 +12,11 @@
     <fuel-fraction>0.8</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/Lockheed-P38/p38-splash.png</splash-texture>
+      <splash-texture>p38-splash.png</splash-texture>
     </startup>
 
     <model>
-      <path>Aircraft/Lockheed-P38/Models/p38.xml</path>
+      <path>Models/p38.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
@@ -24,11 +24,11 @@
 
     <submodels> 
       <serviceable type="bool">true</serviceable>
-      <path>Aircraft/Lockheed-P38/Models/Effects/guns/submodels.xml</path>
+      <path>Models/Effects/guns/submodels.xml</path>
     </submodels>
 
     <sound>
-      <path>Aircraft/Lockheed-P38/Sounds/p38-sound.xml</path>
+      <path>Sounds/p38-sound.xml</path>
     </sound>
 
     <multiplay>
@@ -116,16 +116,38 @@
 
   <nasal>
     <doors>
-      <file>Aircraft/Lockheed-P38/Nasal/doors.nas</file>
+      <file>Nasal/doors.nas</file>
     </doors>
     <p38>
-      <file>Aircraft/Lockheed-P38/Nasal/liveries.nas</file>
-      <file>Aircraft/Lockheed-P38/Nasal/light.nas</file>
+      <file>Nasal/liveries.nas</file>
+      <file>Nasal/light.nas</file>
     </p38>
     <guns>
-      <file>Aircraft/Lockheed-P38/Nasal/weapons.nas</file>
-      <file>Aircraft/Lockheed-P38/Nasal/revi.nas</file>
+      <file>Nasal/weapons.nas</file>
+      <file>Nasal/revi.nas</file>
     </guns>
+
+    <VHF22>
+      <file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
+    </VHF22>
+    <VIR32>
+      <file>Aircraft/Generic/DualControl/Instruments/VIR-32/ctl32.nas</file>
+    </VIR32>
+    <ADF462>
+      <file>Aircraft/Generic/DualControl/Instruments/ADF-462/ctl62.nas</file>
+    </ADF462>
+
+    <dev>
+      <script>
+setprop("instrumentation/kt-70/inputs/digit[3]", 7);
+setprop("instrumentation/kt-70/inputs/digit[2]", 0);
+setprop("instrumentation/kt-70/inputs/digit[1]", 0);
+setprop("instrumentation/kt-70/inputs/digit[0]", 0);
+setprop("instrumentation/kt-70/inputs/knob-mode", 1);
+setprop("systems/electrical/outputs/comm", 24);
+setprop("systems/electrical/outputs/comm[1]", 24);
+      </script>
+    </dev>
   </nasal>
 
 </PropertyList>
