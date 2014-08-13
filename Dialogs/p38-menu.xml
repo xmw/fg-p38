@@ -13,6 +13,13 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Guns On/Off</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/guns-visible</property>
+        </binding>
+      </item>
     </menu>
   </default>
 

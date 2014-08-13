@@ -5,7 +5,7 @@
   <sim include="Nasal/views.xml">
 
     <description>Lockheed P 38 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM), Michael Weber (mods)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
 
@@ -21,11 +21,6 @@
         <file type="string">default</file>
       </livery>
     </model>
-
-    <submodels> 
-      <serviceable type="bool">true</serviceable>
-      <path>Models/Effects/guns/submodels.xml</path>
-    </submodels>
 
     <sound>
       <path>Sounds/p38-sound.xml</path>
@@ -70,10 +65,6 @@
       <key>
         <name>D</name>
         <desc>Open/Close side windows</desc>
-      </key>
-      <key>
-        <name>e</name>
-        <desc>Guns fire</desc>
       </key>
     </help>
 
@@ -122,10 +113,6 @@
       <file>Nasal/liveries.nas</file>
       <file>Nasal/light.nas</file>
     </p38>
-    <guns>
-      <file>Nasal/weapons.nas</file>
-      <file>Nasal/revi.nas</file>
-    </guns>
 
     <VHF22>
       <file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>

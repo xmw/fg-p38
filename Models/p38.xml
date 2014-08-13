@@ -63,7 +63,6 @@
     <object-name>fenetreD</object-name>
 
     <object-name>trous</object-name>
-    <object-name>guns</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
@@ -123,7 +122,6 @@
     <object-name>fenetreD</object-name>
 
     <object-name>trous</object-name>
-    <object-name>guns</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
@@ -356,62 +354,6 @@
       <x-m> -1.360 </x-m>
       <y-m>  2.502 </y-m>
       <z-m> -1.635 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Effets de tir -->
-  <!-- Extérieur gauche -->
-  <model>
-    <path>Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.333 </x-m>
-      <y-m> -0.245 </y-m>
-      <z-m>  0.210 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model>
-
-  <!--Extérieur droit -->
-  <model>
-    <path>Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.333 </x-m>
-      <y-m>  0.245 </y-m>
-      <z-m>  0.210 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model>
-
-  <!-- Central gauche -->
-  <model>
-    <path>Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.434 </x-m>
-      <y-m> -0.093 </y-m>
-      <z-m>  0.323 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model>
-
-  <!-- Central droit -->
-  <model>
-    <path>Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.624 </x-m>
-      <y-m>  0.093 </y-m>
-      <z-m>  0.323 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model>
-
-  <!-- Canon -->
-  <model>
-    <path>Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.498 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.161 </z-m>
-      <pitch-deg> 180 </pitch-deg>
     </offsets>
   </model>
 
