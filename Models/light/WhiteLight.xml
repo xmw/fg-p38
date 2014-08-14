@@ -53,7 +53,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>controls/lighting/nav-lights</property>
+      <property>controls/lighting/beacon</property>
     </condition>
   </animation>
 
