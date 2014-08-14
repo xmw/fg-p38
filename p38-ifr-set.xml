@@ -5,8 +5,8 @@
 
   <sim>
 
-    <description>Lockheed P 38 (YASim) xmw</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <description>Lockheed P 38 (YASim) w/ IFR euqippment</description>
+    <author>BARANGER Emmanuel (3D/FDM) WEBER Michael (IFR)</author>
 
     <rating>
       <FDM type="int">     2 </FDM>
