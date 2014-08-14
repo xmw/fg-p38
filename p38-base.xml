@@ -37,7 +37,6 @@
         <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
         <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
@@ -113,9 +112,25 @@
       <file>Nasal/liveries.nas</file>
       <file>Nasal/light.nas</file>
     </p38>
+    <kap140>
+      <file>Aircraft/Generic/kap140.nas</file>
+    </kap140>
+    <ki266>
+      <file>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki266/ki266.nas</file>
+    </ki266>
 
     <dev>
       <script>
+        setprop("/controls/switches/nav-lights", 0);
+        setprop("/controls/switches/landing-lights", 0);
+        setprop("/controls/switches/master-avionics", 1);
+        setprop("/controls/switches/nav-lights", 0);
+        setprop("/controls/switches/pitot-heat", 0);
+        setprop("/controls/switches/strobe-lights", 0);
+        setprop("/controls/switches/taxi-lights", 0);
+        setprop("/systems/electrical/outputs/comm[0]", 24);
+        setprop("/systems/electrical/outputs/comm[1]", 24);
+        setprop("/instrumentation/dme/power-btn", 1);
       </script>
     </dev>
   </nasal>

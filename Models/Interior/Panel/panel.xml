@@ -8,24 +8,58 @@
     <object-name>panel</object-name>
   </animation>
 
+  
+
+  <!-- left 2nd -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> 0.000</x-m>
+      <y-m>-0.200</y-m>
+      <z-m> 0.100</z-m>
+    </offsets>
+  </model>
   <model>
     <path>Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
       <x-m> -0.005 </x-m>
-      <y-m> -0.200 </y-m>
-      <z-m> -0.080 </z-m>
+      <y-m> -0.220 </y-m>
+      <z-m> -0.050 </z-m>
     </offsets>
   </model>
-  
+  <model>
+    <path>Models/Interior/Panel/Instruments/manifold/man.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.320 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
   <model>
     <path>Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
     <offsets>
       <x-m> -0.004 </x-m>
-      <y-m> -0.280 </y-m>
-      <z-m>  0.020 </z-m>
+      <y-m> -0.310 </y-m>
+      <z-m> -0.140 </z-m>
     </offsets>
   </model>
-  
+  <model>
+    <path>Models/Interior/Panel/Instruments/fuel/fuel-1.xml</path>
+    <offsets>
+      <x-m> -0.004 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.150 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model>
+
   <model>
     <path>Models/Interior/Panel/Instruments/magnetos/magnetos.xml</path>
     <offsets>
@@ -35,8 +69,6 @@
       <pitch-deg> -90 </pitch-deg>
     </offsets>
   </model>
-  
-  <!-- STARTERS -->
   <model>
     <path>Models/Interior/Panel/Instruments/switchs/startL.xml</path>
     <offsets>
@@ -46,7 +78,6 @@
       <pitch-deg> -90 </pitch-deg>
     </offsets>
   </model>
-  
   <model>
     <path>Models/Interior/Panel/Instruments/switchs/startR.xml</path>
     <offsets>
@@ -57,44 +88,93 @@
     </offsets>
   </model>
 
+  <!-- left 1st -->
   <model>
-    <path>Aircraft/Instruments/brakes.xml</path>
+    <name>ASI</name>
+    <!-- <path>Instruments/asi/asi.xml</path> -->
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.150 </x-m>
-      <y-m>  0.200 </y-m>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m>  0.100 </z-m>
+    </offsets>
+  </model>
+ 
+  <model>
+    <name>ADF</name>
+    <path>Aircraft/Instruments-3d/kr87-adf/ki227-01.xml</path>
+    <offsets>
+      <x-m>  0.010 </x-m>
+      <y-m> -0.100 </y-m>
       <z-m>  0.000 </z-m>
     </offsets>
   </model>
 
 
+  <!-- center -->
   <model>
-    <path>Aircraft/SR71-BlackBird/Instruments/AI-bb.xml</path>
+    <name>AI</name>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.060 </x-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.100 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>HSI</name>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki252a/ki252a.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.000 </z-m>
     </offsets>
   </model>
-
   <model>
-    <path>Aircraft/Instruments/navcom-radio.xml</path>
-    <name>NavCom 1 Radio</name>
+    <name>VOR2</name>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vor/vor2.xml</path>
     <offsets>
-      <x-m>  0.200 </x-m>
-      <y-m>  0.200 </y-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <!-- right first -->
+  <model>
+    <path>Aircraft/Instruments-3d/kap140/KAP140TwoAxisAlt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.090 </y-m>
+      <z-m>  0.160 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>ALT</name>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m>  0.100 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>VSI</name>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.100 </y-m>
       <z-m>  0.000 </z-m>
     </offsets>
   </model>
 
-
-
   <model>
-    <name>Audio Switches</name>
-    <path>Aircraft/Instruments-3d/kma20/kma20.xml</path>
+    <name>radar ALT</name>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/radar-alt/kra10a.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.100 </y-m>
-      <z-m>  0.170 </z-m>
+      <z-m> -0.100 </z-m>
     </offsets>
   </model>
 
@@ -102,82 +182,66 @@
     <name>lights</name>
     <path>Aircraft/c182/Models/lights.xml</path>
     <offsets>
-      <x-m> 0.130 </x-m>
-      <y-m> 0.140 </y-m>
-      <z-m>-0.250 </z-m>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.140 </y-m>
+      <z-m> -0.250 </z-m>
     </offsets>
   </model>
+
+  <!-- right 2nd -->
   <model>
-    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
+    <name>DME</name>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki266/ki266.xml</path>
     <offsets>
-      <x-m>  0.120 </x-m>
-      <y-m>  0.290 </y-m>
-      <z-m> -0.240 </z-m>
+      <x-m>  0.033 </x-m>
+      <y-m>  0.200 </y-m>
+      <z-m>  0.100 </z-m>
     </offsets>
   </model>
 
   <model>
-    <name>Transponder</name>
-    <path>Aircraft/Instruments-3d/kt70/kt70.xml</path>
+    <name>audio panel</name>
+    <path>Aircraft/Instruments-3d/kma20/kma20.xml</path>
     <offsets>
-      <x-m> 0.050</x-m>
-      <y-m> 0.150</y-m>
-      <z-m> 0.000</z-m>
+      <x-m>  0.033 </x-m>
+      <y-m>  0.242 </y-m>
+      <z-m>  0.028 </z-m>
     </offsets>
   </model>
-
   <model>
-    <path>Aircraft/Instruments-3d/kap140/KAP140TwoAxisAlt.xml</path>
+    <name>navcom1</name>
+    <path>Aircraft/Instruments-3d/kx165/kx165-1.xml</path>
     <offsets>
-      <x-m> 0.050</x-m>
-      <y-m> 0.150</y-m>
-      <z-m> 0.100</z-m>
+      <x-m>  0.033 </x-m>
+      <y-m>  0.242 </y-m>
+      <z-m> -0.020 </z-m>
     </offsets>
   </model>
-
   <model>
+    <name>navcom2</name>
+    <path>Aircraft/Instruments-3d/kx165/kx165-2.xml</path>
+    <offsets>
+      <x-m>  0.033 </x-m>
+      <y-m>  0.242 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>adf</name>
     <path>Aircraft/Instruments-3d/kr87-adf/kr87.xml</path>
     <offsets>
-      <x-m> 0.050</x-m>
-      <y-m> 0.150</y-m>
-      <z-m> 0.150</z-m>
+      <x-m>  0.033 </x-m>
+      <y-m>  0.245 </y-m>
+      <z-m> -0.118 </z-m>
     </offsets>
   </model>
-
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/adf/ki227-01.xml</path>
+    <name>transponder</name>
+    <path>Aircraft/Instruments-3d/kt76a/kt76a.xml</path>
     <offsets>
-      <x-m> 0.050</x-m>
-      <y-m>-0.150</y-m>
-      <z-m> 0.150</z-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.250 </y-m>
+      <z-m> -0.170 </z-m>
     </offsets>
   </model>
-
-  <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m> 0.050</x-m>
-      <y-m>-0.150</y-m>
-      <z-m> 0.060</z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/radar-alt/kra10a.xml</path>
-    <offsets>
-      <x-m> 0.050</x-m>
-      <y-m>-0.150</y-m>
-      <z-m>-0.020</z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki252a/ki252a.xml</path>
-    <offsets>
-      <x-m> 0.050</x-m>
-      <y-m>-0.150</y-m>
-      <z-m>-0.100</z-m>
-    </offsets>
-  </model>
-
 </PropertyList>
