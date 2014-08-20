@@ -104,40 +104,6 @@
     <keyboard include="Nasal/p38-keyboard.xml"/>
   </input>
 
-  <!--
-    <adf>
-      <name>adf</name>
-      <number>0</number>
-    </adf>
-    <adf>
-      <name>adf</name>
-      <number>1</number>
-    </adf>
-
-    <adf n="0">
-      <frequencies>
-        <selected-khz>374</selected-khz>
-        <standby-khz>203</standby-khz>
-      </frequencies>
-    </adf>
-  -->
-
-  <instrumentation>
-    <adf n="1">
-      <mode type="string">adf</mode>
-      <serviceable type="bool">true</serviceable>
-      <power-btn type="bool">true</power-btn>
-      <in-range type="bool">false</in-range>
-      <operable type="bool">true</operable>
-      <ident type="string"></ident>
-      <ident-audible type="bool">true</ident-audible>
-      <volume type="float">0.5</volume>
-      <frequencies>
-        <selected-khz>203</selected-khz>
-        <standby-khz>374</standby-khz>
-      </frequencies>
-    </adf>
-  </instrumentation>
 
   <nasal>
     <doors>
@@ -167,6 +133,9 @@
       <file>Aircraft/Generic/DualControl/Instruments/KR87/kr87.nas</file>
     </KR87>
 
+    <!-- <blub>
+      <file>Aircraft/Instruments-3d/kfc200/kfc-200.nas</file>
+    </blub> -->
     <dev>
       <script>
         setprop("/controls/switches/nav-lights", 1);
@@ -180,6 +149,8 @@
         setprop("/systems/electrical/outputs/comm[0]", 24);
         setprop("/systems/electrical/outputs/comm[1]", 24);
         setprop("/systems/electrical/outputs/adf[1]", 24);
+        
+	setprop("autopilot/settings/target-altitude-ft", 10000);
 
       </script>
     </dev>
