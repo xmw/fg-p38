@@ -193,7 +193,7 @@
   <!-- radio stack -->
   <model>
     <name>Transponder</name>
-    <path>Aircraft/Instruments-3d/TDR-94/ctl92-transponder.xml</path>
+    <path>Instruments/TDR-94/ctl92-transponder.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.270 </y-m>
