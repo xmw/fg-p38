@@ -102,7 +102,7 @@
   </model>
   <model>
     <name>ADF/Radio 2 Compass</name>
-    <path>Aircraft/Generic/DualControl/Instruments/ki227-2.xml</path>
+    <path>Instruments/ki227-2.xml</path>
     <offsets>
       <x-m>  0.010 </x-m>
       <y-m> -0.100 </y-m>

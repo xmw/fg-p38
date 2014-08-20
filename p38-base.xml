@@ -104,6 +104,41 @@
     <keyboard include="Nasal/p38-keyboard.xml"/>
   </input>
 
+  <instrumentation>
+
+    <adf>
+      <name>adf</name>
+      <number>0</number>
+    </adf>
+    <adf>
+      <name>adf</name>
+      <number>1</number>
+    </adf>
+
+    <adf n="0">
+      <frequencies>
+        <selected-khz>374</selected-khz>
+        <standby-khz>203</standby-khz>
+      </frequencies>
+    </adf>
+
+
+    <adf n="1">
+      <mode type="string">adf</mode>
+      <serviceable type="bool">true</serviceable>
+      <power-btn type="bool">true</power-btn>
+      <in-range type="bool">false</in-range>
+      <operable type="bool">true</operable>
+      <ident type="string"></ident>
+      <ident-audible type="bool">true</ident-audible>
+      <volume type="float">0.5</volume>
+      <frequencies>
+        <selected-khz>203</selected-khz>
+        <standby-khz>374</standby-khz>
+      </frequencies>
+    </adf>
+  </instrumentation>
+
   <nasal>
     <doors>
       <file>Nasal/doors.nas</file>
