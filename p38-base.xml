@@ -112,25 +112,37 @@
       <file>Nasal/liveries.nas</file>
       <file>Nasal/light.nas</file>
     </p38>
-    <kap140>
-      <file>Aircraft/Generic/kap140.nas</file>
-    </kap140>
-    <ki266>
-      <file>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki266/ki266.nas</file>
-    </ki266>
+
+    <ADF462>
+      <file>Aircraft/Generic/DualControl/Instruments/ADF-462/ctl62.nas</file>
+    </ADF462>
+    <VHF22>
+      <file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
+    </VHF22>
+    <VIR32>
+      <file>Aircraft/Generic/DualControl/Instruments/VIR-32/ctl32.nas</file>
+    </VIR32>
+    <KDI572>
+      <file>Aircraft/Generic/DualControl/Instruments/KDI-572/kdi572.nas</file>
+    </KDI572>
+    <KI206>
+      <file>Aircraft/Generic/DualControl/Instruments/KI-206/ki206.nas</file>
+    </KI206>
 
     <dev>
       <script>
-        setprop("/controls/switches/nav-lights", 0);
+        setprop("/controls/switches/nav-lights", 1);
         setprop("/controls/switches/landing-lights", 0);
         setprop("/controls/switches/master-avionics", 1);
-        setprop("/controls/switches/nav-lights", 0);
-        setprop("/controls/switches/pitot-heat", 0);
-        setprop("/controls/switches/strobe-lights", 0);
+        setprop("/controls/switches/nav-lights", 1);
+        setprop("/controls/switches/pitot-heat", 1);
+        setprop("/controls/switches/strobe-lights", 1);
         setprop("/controls/switches/taxi-lights", 0);
+
         setprop("/systems/electrical/outputs/comm[0]", 24);
         setprop("/systems/electrical/outputs/comm[1]", 24);
-        setprop("/instrumentation/dme/power-btn", 1);
+        setprop("/systems/electrical/outputs/adf[1]", 24);
+
       </script>
     </dev>
   </nasal>
