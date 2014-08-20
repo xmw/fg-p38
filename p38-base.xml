@@ -104,8 +104,7 @@
     <keyboard include="Nasal/p38-keyboard.xml"/>
   </input>
 
-  <instrumentation>
-
+  <!--
     <adf>
       <name>adf</name>
       <number>0</number>
@@ -121,8 +120,9 @@
         <standby-khz>203</standby-khz>
       </frequencies>
     </adf>
+  -->
 
-
+  <instrumentation>
     <adf n="1">
       <mode type="string">adf</mode>
       <serviceable type="bool">true</serviceable>
@@ -163,6 +163,9 @@
     <KI206>
       <file>Aircraft/Generic/DualControl/Instruments/KI-206/ki206.nas</file>
     </KI206>
+    <KR87>
+      <file>Aircraft/Generic/DualControl/Instruments/KR87/kr87.nas</file>
+    </KR87>
 
     <dev>
       <script>
