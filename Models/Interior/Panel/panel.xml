@@ -9,7 +9,6 @@
   </animation>
 
   
-
   <!-- left 2nd -->
   <model>
     <path>Instruments/rpm/rpm.xml</path>
@@ -28,19 +27,19 @@
     </offsets>
   </model>
   <model>
-    <path>Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <path>Models/Interior/Panel/Instruments/fuel/fuel-dual.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.020 </x-m>
       <y-m> -0.270 </y-m>
       <z-m>  0.050 </z-m>
     </offsets>
   </model>
   <model>
-    <path>Models/Interior/Panel/Instruments/fuel/fuel-1.xml</path>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.270 </y-m>
-      <z-m> -0.030 </z-m>
+      <z-m> -0.050 </z-m>
     </offsets>
   </model>
 
@@ -64,25 +63,6 @@
       <z-m>  0.040 </z-m>
     </offsets>
   </model>
-  <model>
-    <name>ADF/Radio Compass</name>
-    <path>Aircraft/Generic/DualControl/Instruments/ki227-1.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.090 </y-m>
-      <z-m> -0.050 </z-m>
-    </offsets>
-  </model>
-  <model>
-    <name>ADF/Radio 2 Compass</name>
-    <path>Instruments/ki227-2.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.090 </y-m>
-      <z-m> -0.140 </z-m>
-    </offsets>
-  </model>
-
 
   <!-- center -->
   <model>
@@ -95,30 +75,21 @@
     </offsets>
   </model>
   <model>
-    <name>HSI</name>
-    <path>Aircraft/Instruments-3d/kfc200/ki252a.xml</path>
+    <name>HI</name>
+    <path>Aircraft/Instruments-3d/hi/hi.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.040 </z-m>
     </offsets>
   </model>
   <model>
-    <name>VOR/LOC</name>
-    <path>Aircraft/Generic/DualControl/Instruments/KI-206/ki206-1.xml</path>
+    <name>mag compass</name>
+    <path>Aircraft/Instruments-3d/mag-compass.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.050 </z-m>
-    </offsets>
-  </model>
-  <model>
-    <name>VOR/LOC 2</name>
-    <path>Aircraft/Generic/DualControl/Instruments/KI-206/ki206-2.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.140 </z-m>
     </offsets>
   </model>
 
@@ -141,17 +112,55 @@
       <z-m>  0.040 </z-m>
     </offsets>
   </model>
+
+  <!-- right 2nd -->
+  <model>
+    <name>VOR/LOC</name>
+    <path>Aircraft/Generic/DualControl/Instruments/KI-206/ki206-1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.175 </y-m>
+      <z-m>  0.120 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>VOR/LOC 2</name>
+    <path>Aircraft/Generic/DualControl/Instruments/KI-206/ki206-2.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.175 </y-m>
+      <z-m>  0.035 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rigth 3rd -->
+  <model>
+    <name>ADF/Radio Compass</name>
+    <path>Aircraft/Generic/DualControl/Instruments/ki227-1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+  <!-- <model>
+    <name>ADF/Radio 2 Compass</name>
+    <path>Instruments/ki227-2.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.090 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model> -->
   <model>
     <name>DME</name>
     <path>Aircraft/Generic/DualControl/Instruments/KDI-572/kdi572.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.090 </y-m>
-      <z-m> -0.040 </z-m>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m> -0.010 </z-m>
     </offsets>
   </model>
-
-  <!-- right 2nd -->
 
   <!-- radio stack -->
   <model>
@@ -191,15 +200,6 @@
     </offsets>
   </model>
   <model>
-    <name>Transponder</name>
-    <path>Instruments/TDR-94/ctl92-transponder.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.125 </y-m>
-      <z-m> -0.145</z-m>
-    </offsets>
-  </model>
-  <model>
     <name>Comm 2 radio</name>
     <path>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22-com2.xml</path>
     <offsets>
@@ -218,6 +218,15 @@
     </offsets>
   </model>
   <model>
+    <name>Transponder</name>
+    <path>Instruments/TDR-94/ctl92-transponder.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.320 </y-m>
+      <z-m> -0.145</z-m>
+    </offsets>
+  </model>
+  <!-- <model>
     <name>ADF 2 radio</name>
     <path>Aircraft/Generic/DualControl/Instruments/ADF-462/ctl62-adf2.xml</path>
     <offsets>
@@ -225,7 +234,7 @@
       <y-m>  0.320 </y-m>
       <z-m> -0.145 </z-m>
     </offsets>
-  </model>
+  </model> -->
 
   <!-- lower row -->
   <model>
@@ -262,14 +271,6 @@
       <x-m>  0.130 </x-m>
       <y-m>  0.140 </y-m>
       <z-m> -0.250 </z-m>
-    </offsets>
-  </model>
-  <model>
-    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
-    <offsets>
-      <x-m>  0.120 </x-m>
-      <y-m>  0.300 </y-m>
-      <z-m> -0.240 </z-m>
     </offsets>
   </model>
 

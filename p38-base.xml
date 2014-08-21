@@ -149,6 +149,7 @@
         setprop("/systems/electrical/outputs/comm[0]", 24);
         setprop("/systems/electrical/outputs/comm[1]", 24);
         setprop("/systems/electrical/outputs/adf[1]", 24);
+        setprop("instrumentation/adf/ident-audible", 1);
         
 	setprop("autopilot/settings/target-altitude-ft", 10000);
 
