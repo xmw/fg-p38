@@ -13,9 +13,9 @@
      Vitesse max          : 712 km/h (385 kt) at 28000 ft (8530 m)
 -->
 
-<airplane mass="12800">
+<airplane mass="12800" version="YASIM_VERSION_CURRENT">
 
-  <approach speed="60" aoa="3" fuel="0.3">
+  <approach speed="100" aoa="3" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/boost" value="0"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
@@ -48,13 +48,13 @@
   <cockpit x="2.277" y="0" z="0.444"/>
 
   <!-- Fuselage -->
-  <fuselage ax="5.752" ay=" 0.000" az="-0.124" bx="-0.233" by=" 0.000" bz="0.040" width="1.13" taper="0.5" midpoint="0.40"/>
+  <fuselage ax="5.752" ay=" 0.000" az="-0.124" bx="-0.233" by=" 0.000" bz="0.040" width="1.33" taper="0.5" midpoint="0.40"/>
 
   <!-- Engine left -->
-  <fuselage ax="4.057" ay=" 2.404" az="-0.010" bx="-4.376" by=" 2.404" bz="0.651" width="1.00" taper="0.3" midpoint="0.02"/>
+  <fuselage ax="4.057" ay=" 2.404" az="-0.010" bx="-4.376" by=" 2.404" bz="0.651" width="1.40" taper="0.3" midpoint="0.02"/>
 
   <!-- Engine right -->
-  <fuselage ax="4.057" ay="-2.404" az="-0.010" bx="-4.376" by="-2.404" bz="0.651" width="1.00" taper="0.3" midpoint="0.02"/>
+  <fuselage ax="4.057" ay="-2.404" az="-0.010" bx="-4.376" by="-2.404" bz="0.651" width="1.40" taper="0.3" midpoint="0.02"/>
 
   <!-- Wing -->
   <wing x="1.260" y="0.354" z="0.090"

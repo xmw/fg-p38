@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- vim: tabstop=2 expandtab
+-->
 
 <PropertyList>
 
@@ -28,7 +30,7 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic> 
+      <generic>
         <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
         <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
         <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
@@ -106,6 +108,9 @@
 
 
   <nasal>
+    <init>
+      <file>Nasal/init.nas</file>
+    </init>
     <doors>
       <file>Nasal/doors.nas</file>
     </doors>
@@ -114,47 +119,25 @@
       <file>Nasal/light.nas</file>
     </p38>
 
-    <ADF462>
-      <file>Aircraft/Generic/DualControl/Instruments/ADF-462/ctl62.nas</file>
-    </ADF462>
-    <VHF22>
-      <file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
-    </VHF22>
-    <VIR32>
-      <file>Aircraft/Generic/DualControl/Instruments/VIR-32/ctl32.nas</file>
-    </VIR32>
-    <KDI572>
-      <file>Aircraft/Generic/DualControl/Instruments/KDI-572/kdi572.nas</file>
-    </KDI572>
-    <KI206>
-      <file>Aircraft/Generic/DualControl/Instruments/KI-206/ki206.nas</file>
-    </KI206>
-    <KR87>
-      <file>Aircraft/Generic/DualControl/Instruments/KR87/kr87.nas</file>
-    </KR87>
-
-    <!-- <blub>
-      <file>Aircraft/Instruments-3d/kfc200/kfc-200.nas</file>
-    </blub> -->
+    <FarminScreen1>
+      <file>Aircraft/Instruments-3d/Farmin/G1000/Nasal/PFD/PFD.nas</file>
+      <file>Aircraft/Instruments-3d/Farmin/G1000/Nasal/init.nas</file>
+      <file>Aircraft/Instruments-3d/Farmin/G1000/Nasal/PfdKeyHandler.nas</file>
+    </FarminScreen1>
+    <!-- <Farmin>
+      <file>Aircraft/Instruments-3d/Farmin/Systems/GMU44.nas</file>
+    </Farmin>
+    <GMU>
+      <file>Aircraft/Instruments-3d/Farmin/Nasal/toolset.nas</file>
+      <file>Aircraft/Instruments-3d/Farmin/Systems/GDC74A.nas</file>
+    </GMU>
+    <GRS>
+      <file>Aircraft/Instruments-3d/Farmin/Systems/GRS77.nas</file>
+    </GRS>
     <dev>
       <script>
-        setprop("/controls/switches/nav-lights", 1);
-        setprop("/controls/switches/landing-lights", 0);
-        setprop("/controls/switches/master-avionics", 1);
-        setprop("/controls/switches/nav-lights", 1);
-        setprop("/controls/switches/pitot-heat", 1);
-        setprop("/controls/switches/strobe-lights", 1);
-        setprop("/controls/switches/taxi-lights", 0);
-
-        setprop("/systems/electrical/outputs/comm[0]", 24);
-        setprop("/systems/electrical/outputs/comm[1]", 24);
-        setprop("/systems/electrical/outputs/adf[1]", 24);
-        setprop("instrumentation/adf/ident-audible", 1);
-        
-	setprop("autopilot/settings/target-altitude-ft", 10000);
-
       </script>
-    </dev>
+    </dev> -->
   </nasal>
 
 </PropertyList>
